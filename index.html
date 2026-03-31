@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Discover Workshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .feed {
+            max-width: 375px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .search-box {
+            background-color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .feed {
+            padding: 0;
+        }
+        .card {
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px;
+            font-size: 16px;
+            line-height: 1.4;
+            font-weight: bold;
+        }
+        .card .source {
+            margin: 0 10px 10px;
+            font-size: 14px;
+            color: #5f6368;
+        }
+        .panel {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .panel h4 {
+            margin-top: 0;
+            color: #1a73e8;
+        }
+        .gpt-link {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="feed">
+                <!-- Chapter 1 -->
+                <div class="search-box">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="search-icon">
+                    <input type="text" value="Top Artikel Computerbild" readonly>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/9/0/6/0/8/1/Telekom-Logo-3567-2048x1152-d89dac333af264da.jpg" alt="Telekom erhöht Preise">
+                    <h3>Telekom erhöht Preise um bis zu 30 Prozent ab April – Kosten-Tabelle</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/8/8/6/7/0/5/USB-A--USB-C--USB-3-1---bitte-was--Auch-nach-30-Jahren-USB-ist-die-Verwirrung-3567-2048x1152-c4d32ec156cebeb8.jpg" alt="USB wird 30">
+                    <h3>USB wird 30: Jeder nutzt den Anschluss falsch</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/9/2/3/8/9/7/Banking-Trojaner-3567-2048x1152-8b0291891d7f28bf.jpg" alt="Online-Banking-Gerät">
+                    <h3>Online-Banking-Gerät: Android-Gefahr</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/8/8/8/8/5/1/China-schafft-Mehrwertsteuer-Exportverguenstigungen-fuer-Photovoltaik-Produkte-3567-1280x720-3f521ebebcb10e69.jpg" alt="China-Steuer-Vergünstigungen">
+                    <h3>China-Steuer-Vergünstigungen: Balkonkraftwerke werden teurer</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/0/1/0/6/3/1/Symbolbild--QR-Code-auf-einem-Smartphone-3567-1280x720-fe807f9413776aef.jpg" alt="QR-Code-Scanner">
+                    <h3>QR-Code-Scanner: Smartphone-Display als Scanner nutzen</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Samsung-Handy" alt="Samsung-Handy">
+                    <h3>Sie haben ein Samsung-Handy? Wissen Sie, so schalten Sie ab</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/8/2/3/8/9/9/Einschaltknopf-an-Smartphone-druecken-3567-2048x1152-39d6096ec9083ace.jpg" alt="Samsung Galaxy">
+                    <h3>Samsung Galaxy: Knopf funktioniert nicht? So beheben Sie das Problem</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/8/7/5/8/1/7/Apple-iPhone-14-auf-einem-Friedhof-3567-2048x1152-3a48a2aceb07b7ea.jpg" alt="Apple Geräte">
+                    <h3>Apple schickt 25 Geräte in Rente</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=FritzBox-Wächter" alt="FritzBox-Wächter">
+                    <h3>FritzBox-Wächter: Abelssoft RouterGuard gratis</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.computer-bild.de/imgs/1/5/8/8/9/9/4/1/Stumme-Anrufe-3567-2048x1152-a80445ff84cbdc96.jpg" alt="Telefon-Gefahr">
+                    <h3>Telefon-Gefahr: Anrufer meldet sich nicht – Wieso es Kriminelle sein könnten</h3>
+                    <p class="source">Computerbild</p>
+                </div>
+                
+                <!-- Chapter 2 -->
+                <div class="search-box">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="search-icon">
+                    <input type="text" value="Erkenntnise Welt Discover Auswertung" readonly>
+                </div>
+                
+                <div class="panel">
+                    <h4>Keywords sollten nicht zu kleinteilig sind</h4>
+                    <p>Eher "Ernährung" als "Karottensaft"</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Empfohlener Aufbau 1</h4>
+                    <p>Keyword: Starke Zeile</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Empfohlener Aufbau 2</h4>
+                    <p>Keyword Zitat Kontext</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Titel dürfen zugespitzt sein</h4>
+                    <p>ohne Clickbait sein zu müssen</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Cliffhänger oder implizites Rätsel einbauen</h4>
+                    <p>ohne vollständige Auflösung</p>
+                </div>
+                
+                <!-- Chapter 3 -->
+                <div class="search-box">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="search-icon">
+                    <input type="text" value="Discover BILD-Überschriften" readonly>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.bild.de/69a5640b2ecb6a0d6559d793/acca16204f75f3cf5551f817421037df,bf35188e?w=1280" alt="Bäckerei-Kette insolvent">
+                    <h3>Bäckerei-Kette insolvent: Alle Filialen müssen dichtmachen</h3>
+                    <p class="source">BILD</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.bild.de/695cd59a95fe8bf439d66d87/40b810c6417e55938be355f63f935301,d7f5fd13?w=1280" alt="BILD-Besuch bei Birgit Schrowange">
+                    <h3>BILD-Besuch bei Birgit Schrowange: "Ich zeige euch mein Zuhause"</h3>
+                    <p class="source">BILD</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.bild.de/695b8d3dfb77630dac277ddb/bb3532bba0c2fec439edfa4e3a3fd686,f5648067?w=1280" alt="Unwetter-Front">
+                    <h3>Unwetter-Front mit bis zu 120 km/h: Heftiger Schneesturm peitscht nach Deutschland</h3>
+                    <p class="source">BILD</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.bild.de/69c14696dc49aa83e414cc6c/fef345ee5467fc2580b807314d60a113,afc4227b?w=1280" alt="Freizeitpark">
+                    <h3>Freizeitpark wird wohl nie eröffnen – für 50 Millionen Euro gebaut</h3>
+                    <p class="source">BILD</p>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.bild.de/69b2b8a0ee2a063baa58413f/99caf98fb7f02ef4c181f820c087b998,f21df155?w=1280" alt="Häuser-Babyboomer">
+                    <h3>Es geht um Millionen: Häuser-Babyboomer lassen Immobilienmarkt beben</h3>
+                    <p class="source">BILD</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Besonderheit - Bedeutung für mich</h4>
+                    <p>(z.B. Erste Smartmütze vorgestellt - dann gibt es sie zu kaufen)</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Unbekannte Markennamen erklären</h4>
+                    <p>(Großer Deutscher Chiphersteller)</p>
+                </div>
+                
+                <div class="panel">
+                    <h4>Marken und Personen nur nennen wenn sie bekannt sind</h4>
+                    <p>(eigenes Knowledge-Snippet haben)</p>
+                </div>
+                
+                <!-- Chapter 4 -->
+                <div class="search-box">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="search-icon">
+                    <input type="text" value="Discover Zeilen GPT" readonly>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=GPT+Screenshot" alt="GPT Screenshot">
+                    <h3><a href="https://chatgpt.com/g/g-6968f71eb3748191b7551bd51e7e5923-l-g-discover-coach" class="gpt-link">Bestes GPT für Discover-Zeilen</a></h3>
+                    <p class="source">ChatGPT</p>
+                </div>
+            </div>
+</body>
+</html>
